@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://hochia.github.io/"
 languageCode = "en-us"
 title = "A Hugo website"
 theme = "hugo-lithium"
