@@ -60,7 +60,7 @@
 
   <article class="article">
     
-    <span class="article-duration">4 min read</span>
+    <span class="article-duration">3 min read</span>
     
 
     <h1 class="article-title">統計學與實習</h1>
@@ -121,7 +121,7 @@ df[[2]] &lt;- 4:6</code></pre>
 <li><p>相同的平均值，不同的標準差</p></li>
 <li><p>不同的平均值，相同的標準差</p></li>
 </ol>
-<p><img src="/post/2019-10-10-TA-class_files/figure-html/unnamed-chunk-7-1.png" width="672" /><img src="/post/2019-10-10-TA-class_files/figure-html/unnamed-chunk-7-2.png" width="672" /></p>
+<p><img src="/post/20191010/2019-10-10-TA-class_files/figure-html/unnamed-chunk-7-1.png" width="672" /><img src="/post/20191010/2019-10-10-TA-class_files/figure-html/unnamed-chunk-7-2.png" width="672" /></p>
 <pre class="r"><code>df &lt;- data.frame(
   matrix(0, nrow = 1000, ncol = 2))
 
@@ -130,7 +130,7 @@ df[[2]] &lt;- dnorm(df[[1]], mean = 0, sd = 1)</code></pre>
 <p><code>rnorm()</code> 隨機抽樣</p>
 <p><code>dnorm()</code> 抽出樣本的機率</p>
 <pre class="r"><code>plot(x = df[[1]], y = df[[2]])</code></pre>
-<p><img src="/post/2019-10-10-TA-class_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p><img src="/post/20191010/2019-10-10-TA-class_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
 <p>依此類推，分別對三種分布抽出 1000 個樣本。</p>
 <pre class="r"><code>df &lt;- data.frame(
   matrix(0, nrow = 1000, ncol = 6))
@@ -149,12 +149,12 @@ df[[1]] &lt;- rnorm(1000, 0, 1)</code></pre>
 <pre class="r"><code>plot(x = df[[1]], y = df[[2]])
 par(new = T)
 plot(x = df[[3]], y = df[[4]])</code></pre>
-<p><img src="/post/2019-10-10-TA-class_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+<p><img src="/post/20191010/2019-10-10-TA-class_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
 <p>但是尺度可能不一樣，用 <code>xlim()</code>，<code>ylim()</code> 限制範圍。</p>
 <pre class="r"><code>plot(x = df[[1]], y = df[[2]], xlim = c(-3,3), ylim = c(0,0.5))
 par(new = T)
 plot(x = df[[3]], y = df[[4]], xlim = c(-3,3), ylim = c(0,0.5))</code></pre>
-<p><img src="/post/2019-10-10-TA-class_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
+<p><img src="/post/20191010/2019-10-10-TA-class_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
 <p>以此類推，第二小題，</p>
 <pre class="r"><code>plot(x = df[[1]], y = df[[2]], xlim = c(__,__), ylim = c(__,__))
 par(new = T)
@@ -182,36 +182,36 @@ df[[2]] &lt;- dnorm(df[[1]], mean = 0, sd = 1)
 
 plot(x = df[[1]], y = df[[2]], 
      xlim = c(-3,3), ylim = c(0,0.5))</code></pre>
-<p><img src="/post/2019-10-10-TA-class_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
+<p><img src="/post/20191010/2019-10-10-TA-class_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
 <pre class="r"><code>head(df)
-#&gt;            X1        X2
-#&gt; 1  0.75517685 0.2999665
-#&gt; 2  1.35011401 0.1603586
-#&gt; 3  0.02741055 0.3987924
-#&gt; 4 -0.69196859 0.3140042
-#&gt; 5  1.10508522 0.2166342
-#&gt; 6  0.85615883 0.2765282</code></pre>
+#&gt;             X1         X2
+#&gt; 1 -0.127043577 0.39573576
+#&gt; 2  0.263072771 0.38537354
+#&gt; 3  1.852329831 0.07175473
+#&gt; 4 -0.386127325 0.37028375
+#&gt; 5 -2.140292120 0.04038230
+#&gt; 6 -0.004927873 0.39893744</code></pre>
 <p>圖表標題，<code>main = "__"</code>，</p>
 <pre class="r"><code>plot(x = df[[1]], y = df[[2]], 
      xlim = c(-3,3), ylim = c(0,0.5),
      main = &quot;Normal distribution&quot;,
      xlab = &quot;x&quot;, ylab = &quot;y&quot;)</code></pre>
-<p><img src="/post/2019-10-10-TA-class_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
+<p><img src="/post/20191010/2019-10-10-TA-class_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
 <p>更改坐標軸名稱，<code>xlab = "__"</code>，<code>ylab = "__"</code>，</p>
 <pre class="r"><code>plot(x = df[[1]], y = df[[2]], 
      xlim = c(-3,3), ylim = c(0,0.5),
      xlab = &quot;x&quot;, ylab = &quot;y&quot;)</code></pre>
-<p><img src="/post/2019-10-10-TA-class_files/figure-html/unnamed-chunk-20-1.png" width="672" /></p>
+<p><img src="/post/20191010/2019-10-10-TA-class_files/figure-html/unnamed-chunk-20-1.png" width="672" /></p>
 <p>顏色 <code>col = "____"</code>，</p>
 <pre class="r"><code>plot(x = df[[1]], y = df[[2]], 
      xlim = c(-3,3), ylim = c(0,0.5),
      col = &quot;plum&quot;)</code></pre>
-<p><img src="/post/2019-10-10-TA-class_files/figure-html/unnamed-chunk-21-1.png" width="672" /></p>
+<p><img src="/post/20191010/2019-10-10-TA-class_files/figure-html/unnamed-chunk-21-1.png" width="672" /></p>
 <p>點的形狀 <code>pch = 20</code>，</p>
 <pre class="r"><code>plot(x = df[[1]], y = df[[2]], 
      xlim = c(-3,3), ylim = c(0,0.5),
      pch = 20)</code></pre>
-<p><img src="/post/2019-10-10-TA-class_files/figure-html/unnamed-chunk-22-1.png" width="672" /></p>
+<p><img src="/post/20191010/2019-10-10-TA-class_files/figure-html/unnamed-chunk-22-1.png" width="672" /></p>
 </div>
 <div id="ggplot" class="section level2">
 <h2><code>ggplot()</code></h2>
@@ -219,46 +219,46 @@ plot(x = df[[1]], y = df[[2]],
 <pre class="r"><code>install.packages(&quot;ggplot2&quot;)
 library(ggplot2)</code></pre>
 <pre class="r"><code>head(df)
-#&gt;            X1        X2
-#&gt; 1  0.75517685 0.2999665
-#&gt; 2  1.35011401 0.1603586
-#&gt; 3  0.02741055 0.3987924
-#&gt; 4 -0.69196859 0.3140042
-#&gt; 5  1.10508522 0.2166342
-#&gt; 6  0.85615883 0.2765282</code></pre>
+#&gt;             X1         X2
+#&gt; 1 -0.127043577 0.39573576
+#&gt; 2  0.263072771 0.38537354
+#&gt; 3  1.852329831 0.07175473
+#&gt; 4 -0.386127325 0.37028375
+#&gt; 5 -2.140292120 0.04038230
+#&gt; 6 -0.004927873 0.39893744</code></pre>
 <p>基本</p>
 <pre class="r"><code>ggplot(data = df) +
   geom_point(mapping = aes(X1, X2))</code></pre>
-<p><img src="/post/2019-10-10-TA-class_files/figure-html/unnamed-chunk-25-1.png" width="672" /></p>
+<p><img src="/post/20191010/2019-10-10-TA-class_files/figure-html/unnamed-chunk-25-1.png" width="672" /></p>
 <p>或者也可以寫成</p>
 <pre class="r"><code>ggplot(df) +
   geom_point(aes(X1, X2))</code></pre>
-<p><img src="/post/2019-10-10-TA-class_files/figure-html/unnamed-chunk-26-1.png" width="672" /></p>
+<p><img src="/post/20191010/2019-10-10-TA-class_files/figure-html/unnamed-chunk-26-1.png" width="672" /></p>
 <p>坐標軸名稱與圖表標題</p>
 <pre class="r"><code>ggplot(data = df) +
   geom_point(mapping = aes(X1, X2)) +
   labs(x = &quot;x&quot;, y = &quot;y&quot;, title = &quot;Normal distribution&quot;)</code></pre>
-<p><img src="/post/2019-10-10-TA-class_files/figure-html/unnamed-chunk-27-1.png" width="672" /></p>
+<p><img src="/post/20191010/2019-10-10-TA-class_files/figure-html/unnamed-chunk-27-1.png" width="672" /></p>
 <p>注意 argument 順序</p>
 <pre class="r"><code>ggplot(df) +
   geom_point(aes(X1, X2)) +
   labs(&quot;Normal distribution&quot;, &quot;x&quot;, &quot;y&quot;)</code></pre>
-<p><img src="/post/2019-10-10-TA-class_files/figure-html/unnamed-chunk-28-1.png" width="672" /></p>
+<p><img src="/post/20191010/2019-10-10-TA-class_files/figure-html/unnamed-chunk-28-1.png" width="672" /></p>
 <p>座標軸範圍限制</p>
 <pre class="r"><code>ggplot(data = df) +
   geom_point(mapping = aes(X1, X2)) +
   coord_cartesian(xlim = c(-3, 3), ylim = c(0, 0.5))</code></pre>
-<p><img src="/post/2019-10-10-TA-class_files/figure-html/unnamed-chunk-29-1.png" width="672" /></p>
+<p><img src="/post/20191010/2019-10-10-TA-class_files/figure-html/unnamed-chunk-29-1.png" width="672" /></p>
 <p>顏色</p>
 <pre class="r"><code>ggplot(data = df) +
   geom_point(mapping = aes(X1, X2), color = &quot;orange&quot;) +
   coord_cartesian(xlim = c(-3, 3), ylim = c(0, 0.5))</code></pre>
-<p><img src="/post/2019-10-10-TA-class_files/figure-html/unnamed-chunk-30-1.png" width="672" /></p>
+<p><img src="/post/20191010/2019-10-10-TA-class_files/figure-html/unnamed-chunk-30-1.png" width="672" /></p>
 <p>畫圖主題</p>
 <pre class="r"><code>ggplot(data = df) +
   geom_point(mapping = aes(X1, X2)) +
   theme_classic()</code></pre>
-<p><img src="/post/2019-10-10-TA-class_files/figure-html/unnamed-chunk-31-1.png" width="672" /></p>
+<p><img src="/post/20191010/2019-10-10-TA-class_files/figure-html/unnamed-chunk-31-1.png" width="672" /></p>
 <p>疊圖方法</p>
 <pre class="r"><code>ggplot(data = df) +
   geom_point(mapping = aes(X1, X2)) +
@@ -275,7 +275,7 @@ library(ggplot2)</code></pre>
 <li><p>相同的平均值，不同的標準差</p></li>
 <li><p>不同的平均值，相同的標準差</p></li>
 </ol>
-<p><img src="/post/2019-10-10-TA-class_files/figure-html/unnamed-chunk-33-1.png" width="672" /></p>
+<p><img src="/post/20191010/2019-10-10-TA-class_files/figure-html/unnamed-chunk-33-1.png" width="672" /></p>
 </div>
 </div>
 <div id="區間估計" class="section level1">
@@ -300,47 +300,40 @@ qnorm(1, 0, 1)
 df[[1]] &lt;- rnorm(10, mean = 0, sd = 1)
 df[[2]] &lt;- dnorm(df[[1]], mean = 0, sd = 1)</code></pre>
 <pre><code>#&gt;            X1        X2
-#&gt; 1   1.0013045 0.2416551
-#&gt; 2  -0.8092443 0.2875448
-#&gt; 3   1.4118281 0.1472582
-#&gt; 4  -1.0087602 0.2398511
-#&gt; 5  -1.2646441 0.1793168
-#&gt; 6   1.1189684 0.2133153
-#&gt; 7   0.4694045 0.3573253
-#&gt; 8   0.6176503 0.3296630
-#&gt; 9  -0.7571745 0.2995137
-#&gt; 10 -0.9785333 0.2471642</code></pre>
+#&gt; 1   0.2110059 0.3901593
+#&gt; 2  -0.8927742 0.2678143
+#&gt; 3  -0.5445219 0.3439735
+#&gt; 4  -0.1959598 0.3913556
+#&gt; 5  -0.1392691 0.3950921
+#&gt; 6   1.6040576 0.1102021
+#&gt; 7  -0.8139203 0.2864556
+#&gt; 8  -0.7452437 0.3022102
+#&gt; 9   0.4829427 0.3550292
+#&gt; 10  0.8567969 0.2763771</code></pre>
 <p>取出小於 25 百分位的樣本，注意逗點位置，</p>
 <pre class="r"><code>df[df$X1 &lt; qnorm(0.25, 0, 1),]
-#&gt;            X1        X2
-#&gt; 2  -0.8092443 0.2875448
-#&gt; 4  -1.0087602 0.2398511
-#&gt; 5  -1.2646441 0.1793168
-#&gt; 9  -0.7571745 0.2995137
-#&gt; 10 -0.9785333 0.2471642
+#&gt;           X1        X2
+#&gt; 2 -0.8927742 0.2678143
+#&gt; 7 -0.8139203 0.2864556
+#&gt; 8 -0.7452437 0.3022102
 df[df[[1]] &lt; qnorm(0.25, 0, 1),]
-#&gt;            X1        X2
-#&gt; 2  -0.8092443 0.2875448
-#&gt; 4  -1.0087602 0.2398511
-#&gt; 5  -1.2646441 0.1793168
-#&gt; 9  -0.7571745 0.2995137
-#&gt; 10 -0.9785333 0.2471642</code></pre>
+#&gt;           X1        X2
+#&gt; 2 -0.8927742 0.2678143
+#&gt; 7 -0.8139203 0.2864556
+#&gt; 8 -0.7452437 0.3022102</code></pre>
 <p>兩個以上的條件，<code>&amp;</code> 表示“且”，<code>|</code> 表示“或”，取出小於 25 百分位的樣本<strong>或</strong>大於 75百分位的樣本。</p>
 <pre class="r"><code>df[df$X1 &lt; qnorm(0.25, 0, 1) | df$X1 &gt; qnorm(0.75, 0, 1),]
 #&gt;            X1        X2
-#&gt; 1   1.0013045 0.2416551
-#&gt; 2  -0.8092443 0.2875448
-#&gt; 3   1.4118281 0.1472582
-#&gt; 4  -1.0087602 0.2398511
-#&gt; 5  -1.2646441 0.1793168
-#&gt; 6   1.1189684 0.2133153
-#&gt; 9  -0.7571745 0.2995137
-#&gt; 10 -0.9785333 0.2471642</code></pre>
+#&gt; 2  -0.8927742 0.2678143
+#&gt; 6   1.6040576 0.1102021
+#&gt; 7  -0.8139203 0.2864556
+#&gt; 8  -0.7452437 0.3022102
+#&gt; 10  0.8567969 0.2763771</code></pre>
 </div>
 <div id="習題-2" class="section level2">
 <h2>習題</h2>
 <p>從 <span class="math inline">\(N(\mu = 0, \sigma = 1)\)</span> 抽出 1000 個樣本，找出其雙尾 95% 信賴區間，區間內的樣本以紅色表示。</p>
-<p><img src="/post/2019-10-10-TA-class_files/figure-html/unnamed-chunk-39-1.png" width="672" /></p>
+<p><img src="/post/20191010/2019-10-10-TA-class_files/figure-html/unnamed-chunk-39-1.png" width="672" /></p>
 </div>
 </div>
 

@@ -3,22 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/2019/10/15/10/17-r/</loc>
-    <lastmod>2019-10-15T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/</loc>
     <lastmod>2019-10-15T21:13:14-05:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2019-10-15T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/data/</loc>
     <lastmod>2019-10-15T21:13:14-05:00</lastmod>
   </url>
   
@@ -34,6 +24,11 @@
   
   <url>
     <loc>/tags/r-markdown/</loc>
+    <lastmod>2019-10-15T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2019/10/15/ta_class_1017/</loc>
     <lastmod>2019-10-15T21:13:14-05:00</lastmod>
   </url>
   
