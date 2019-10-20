@@ -1,58 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Posts on Hochia learning R</title>
-    <link>/post/</link>
-    <description>Recent content in Posts on Hochia learning R</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 18 Oct 2019 21:13:14 -0500</lastBuildDate>
-    
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>TA_class_1031</title>
-      <link>/2019/10/18/ta_class_1031/</link>
-      <pubDate>Fri, 18 Oct 2019 21:13:14 -0500</pubDate>
-      
-      <guid>/2019/10/18/ta_class_1031/</guid>
-      <description>預備 library(tidyverse) dplyr 資料轉換 &amp;amp; ggplot2 資料視覺化 dplyr 資料轉換 回想上一次我們做過的: mpg %&amp;gt;% select(manufacturer, cty, hwy, class) %&amp;gt;% filter(class %in% c(&amp;quot;compact&amp;quot;, &amp;quot;suv&amp;quot;)) %&amp;gt;% group_by(manufacturer, class) %&amp;gt;% summarise(avg = mean(cty)) #&amp;gt; # A tibble: 15 x 3 #&amp;gt; # Groups: manufacturer [12] #&amp;gt; manufacturer class avg #&amp;gt; &amp;lt;chr&amp;gt; &amp;lt;chr&amp;gt; &amp;lt;dbl&amp;gt; #&amp;gt;</description>
-    </item>
-    
-    <item>
-      <title>TA_class_1024</title>
-      <link>/2019/10/17/ta_class_1024/</link>
-      <pubDate>Thu, 17 Oct 2019 21:13:14 -0500</pubDate>
-      
-      <guid>/2019/10/17/ta_class_1024/</guid>
-      <description>預備 library(tidyverse) 包(Package) 為何要用其他的包，base R 不是也有嗎?比如畫圖，R base 有 plot()、boxplot() 等。為何要用 ggplot2()? 為了彌補之前</description>
-    </item>
-    
-    <item>
-      <title>TA_class_1017</title>
-      <link>/2019/10/15/ta_class_1017/</link>
-      <pubDate>Tue, 15 Oct 2019 21:13:14 -0500</pubDate>
-      
-      <guid>/2019/10/15/ta_class_1017/</guid>
-      <description>New ProjectFile &amp;gt; New Project..
-New Project
-Set the directory name and the subdirectory.
-R MarkdownYou can write the report with RMarkdown. It can generate HTML, PDF, Word, and PPT documents. Furthermore, math equations can be write with LaTex format.
-Find the cheet sheet from Help &amp;gt; Cheetsheets &amp;gt; R Markdown Cheet Sheet
-Create your R Markdown!
-R Markdown
-Add the title and author name.</description>
-    </item>
-    
-    <item>
-      <title>統計學與實習</title>
-      <link>/2019/10/10/%E7%B5%B1%E8%A8%88%E5%AD%B8%E8%88%87%E5%AF%A6%E7%BF%92/</link>
-      <pubDate>Thu, 10 Oct 2019 21:13:14 -0500</pubDate>
-      
-      <guid>/2019/10/10/%E7%B5%B1%E8%A8%88%E5%AD%B8%E8%88%87%E5%AF%A6%E7%BF%92/</guid>
-      <description>TA class New Project File &amp;gt; New Project.. New Project Set the directory name and the subdirectory. R Markdown You can write the report with RMarkdown. It can generate HTML, PDF, Word, and PPT documents. Furthermore, math equations can be write with LaTex format. Find the cheet sheet from Help &amp;gt; Cheetsheets &amp;gt; R Markdown Cheet Sheet Create your R Markdown! R Markdown Add the title and author name. Setup</description>
-    </item>
-    
-  </channel>
-</rss>
