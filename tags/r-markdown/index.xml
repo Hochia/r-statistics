@@ -6,10 +6,19 @@
     <description>Recent content in R Markdown on Hochia learning R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 18 Oct 2019 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 08 Nov 2019 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="/tags/r-markdown/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>TA_class_1114</title>
+      <link>/2019/11/08/ta_class_1114/</link>
+      <pubDate>Fri, 08 Nov 2019 21:13:14 -0500</pubDate>
+      
+      <guid>/2019/11/08/ta_class_1114/</guid>
+      <description>預備 library(tidyverse) tidyr 齊整資料 &amp;amp; ggplot2 資料視覺化 回想上一次我們做過的: 不同製造商的小型車在市區油耗和高速公路油耗的平均值， mpg %&amp;gt;% select(manufacturer, cty, hwy, class) %&amp;gt;% filter(class == &amp;quot;compact&amp;quot;) %&amp;gt;% group_by(manufacturer) %&amp;gt;% summarise(cty_avg = mean(cty), hwy_avg =</description>
+    </item>
     
     <item>
       <title>TA_class_1031</title>
