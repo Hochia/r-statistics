@@ -6,10 +6,29 @@
     <description>Recent content on Hochia learning R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 Nov 2019 21:13:14 -0500</lastBuildDate>
+    <copyright>&amp;copy; 2019. All rights reserved.</copyright>
+    <lastBuildDate>Tue, 19 Nov 2019 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>TA_class_1128</title>
+      <link>/2019/11/19/ta_class_1128/</link>
+      <pubDate>Tue, 19 Nov 2019 21:13:14 -0500</pubDate>
+      
+      <guid>/2019/11/19/ta_class_1128/</guid>
+      <description>預備 library(tidyverse) 信賴區間 單一母體期望值的區間估計 假設母體常態分配，以 \(95\%\) 信賴區間，雙尾檢定為例。 母體變異數已知 \[ \begin{aligned} &amp;amp;X_1, X_2,\dots, X_n \sim N(\mu, \sigma^2)\\\\ &amp;amp;\frac{\bar X_n - \mu}{\frac{\sigma}{\sqrt n}} \sim N(0,1)\\\\ &amp;amp;0.95 = P(z_{0.025} &amp;lt; \frac{\bar X_n</description>
+    </item>
+    
+    <item>
+      <title>TA_class_1121</title>
+      <link>/2019/11/14/ta_class_1121/</link>
+      <pubDate>Thu, 14 Nov 2019 21:13:14 -0500</pubDate>
+      
+      <guid>/2019/11/14/ta_class_1121/</guid>
+      <description>預備 library(tidyverse) 複習 dplyr 資料轉換 filter() and select() group_by() and ungroup() summarize()and summarise() arrange() and desc() mutate() tidyr 齊整資料 gather() and spread() ggplot2 資料視覺化 ggplot() geom_point() geom_col() geom_boxplot() facet_wrap() coord_flip() theme_classic() tibble 資料框 通常 R 的使用者稱資料框都是指 data.fram</description>
+    </item>
     
     <item>
       <title>TA_class_1114</title>

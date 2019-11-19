@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.58.3" />
+
+
+<title>TA_class_1128 - Hochia learning R</title>
+<meta property="og:title" content="TA_class_1128 - Hochia learning R">
+
+
+  <link href='/logo.png' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="https://github.com/hochia">GitHub</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">3 min read</span>
+    
+
+    <h1 class="article-title">TA_class_1128</h1>
+
+    
+    <span class="article-date">2019-11-19</span>
+    
+
+    <div class="article-content">
+      
+
+
+<div id="預備" class="section level2">
+<h2>預備</h2>
+<pre class="r"><code>library(tidyverse)</code></pre>
+</div>
+<div id="信賴區間" class="section level2 tabset tabset-pills tabset-fade">
+<h2>信賴區間</h2>
+<ol style="list-style-type: decimal">
+<li>單一母體期望值的區間估計</li>
+</ol>
+<p>假設母體常態分配，以 <span class="math inline">\(95\%\)</span> 信賴區間，雙尾檢定為例。</p>
+<div id="母體變異數已知" class="section level3">
+<h3>母體變異數已知</h3>
+<p><span class="math display">\[
+\begin{aligned}
+&amp;X_1, X_2,\dots, X_n \sim N(\mu, \sigma^2)\\\\
+&amp;\frac{\bar X_n - \mu}{\frac{\sigma}{\sqrt n}} \sim N(0,1)\\\\
+&amp;0.95 = P(z_{0.025} &lt; 
+\frac{\bar X_n - \mu}{\frac{\sigma}{\sqrt n}} 
+&lt; z_{0.975})\\\\
+&amp;0.95 = P(\bar X_n - z_{0.975}\frac{\sigma}{\sqrt{n}} 
+&lt; \mu 
+&lt; \bar X_n - z_{0.025}\frac{\sigma}{\sqrt{n}})
+\end{aligned}
+\]</span></p>
+<p>在母體常態分配，平均值為 0, 標準差為 2，隨機抽出 100 個樣本，找出此次抽樣的信賴區間，並畫圖表示。</p>
+<pre class="r"><code># 隨機抽樣
+random.sample = rnorm(n = 100, mean = 0, sd = 2)
+# 樣本平均數
+sample.mean &lt;- mean(random.sample)
+sample.mean</code></pre>
+<pre><code>#&gt; [1] 0.005825125</code></pre>
+<pre class="r"><code># 標準常態分配 2.5% 和 97.5% 的位置
+z_0.025 &lt;- qnorm(0.025, mean = 0, sd = 1)
+z_0.975 &lt;- qnorm(0.975, mean = 0, sd = 1)
+round(c(z_0.025, z_0.975), 2)</code></pre>
+<pre><code>#&gt; [1] -1.96  1.96</code></pre>
+<pre class="r"><code># 信賴區間
+lower &lt;- sample.mean - z_0.975 * 2 / sqrt(100)
+upper &lt;- sample.mean - z_0.025 * 2 / sqrt(100)
+round(c(lower, upper), 2)</code></pre>
+<pre><code>#&gt; [1] -0.39  0.40</code></pre>
+<pre class="r"><code># 畫圖
+## 法一
+ggplot() +
+  geom_point(aes(random.sample, dnorm(random.sample, 0, 2))) +
+  geom_vline(xintercept = c(lower, upper),
+             linetype = &quot;dashed&quot;,
+             color = &quot;red&quot;)</code></pre>
+<p><img src="/post/20191119/TA_class_1128_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<pre class="r"><code>## 法二
+data &lt;- tibble(x = random.sample, 
+               y = dnorm(random.sample, 0, 2))
+
+ggplot(data) +
+  geom_point(aes(x, y)) +
+  geom_vline(xintercept = c(lower, upper),
+             linetype = &quot;dashed&quot;,
+             color = &quot;red&quot;,
+             size = 1)</code></pre>
+<p><img src="/post/20191119/TA_class_1128_files/figure-html/unnamed-chunk-2-2.png" width="672" /></p>
+<pre class="r"><code>## 法三
+data &lt;- tibble(x = rnorm(100, 0, 2), 
+               y = dnorm(x, 0, 2))
+
+ggplot(data) +
+  geom_point(aes(x, y)) +
+  geom_vline(xintercept = c(mean(data$x) - qnorm(0.975, 0, 1) * 2 / sqrt(100),
+                            mean(data$x) - qnorm(0.025, 0, 1) * 2 / sqrt(100)),
+             linetype = &quot;dashed&quot;,
+             color = &quot;red&quot;,
+             size = 1)</code></pre>
+</div>
+<div id="母體變異數未知" class="section level3">
+<h3>母體變異數未知</h3>
+<p><span class="math display">\[
+\begin{aligned}
+&amp;X_1, X_2,\dots, X_n \sim N(\mu, \sigma^2)\quad 
+S_n^2 = \frac{1}{n-1}\sum(X_i-\bar X_n)^2\\\\
+&amp;\frac{\bar X_n - \mu}{\frac{S_n}{\sqrt n}} \sim t_{n-1}\\\\
+&amp;0.95 = P(t_{n-1, 0.025} &lt; 
+\frac{\bar X_n - \mu}{\frac{S_n}{\sqrt n}} 
+&lt; t_{n-1, 0.975})\\\\
+&amp;0.95 = P(\bar X_n - t_{n-1, 0.975}\frac{S_n}{\sqrt{n}} 
+&lt; \mu 
+&lt; \bar X_n - t_{n-1, 0.025}\frac{S_n}{\sqrt{n}})
+\end{aligned}
+\]</span></p>
+<p>在母體常態分配，平均值為 0, 標準差未知，隨機抽出 100 個樣本，找出此次抽樣的信賴區間，並畫圖表示。</p>
+<pre class="r"><code># 隨機抽樣
+random.sample = rnorm(n = 100, mean = 0, sd = 2)
+# 樣本平均數
+sample.mean &lt;- mean(random.sample)
+sample.mean</code></pre>
+<pre><code>#&gt; [1] 0.02228167</code></pre>
+<pre class="r"><code># S_n
+S_n &lt;- sqrt(sum((random.sample - sample.mean) ** 2) / (100 - 1))
+S_n</code></pre>
+<pre><code>#&gt; [1] 1.592378</code></pre>
+<pre class="r"><code># t 分配 2.5% 和 97.5% 的位置
+t_0.025 &lt;- qt(0.025, df = 100 - 1)
+t_0.975 &lt;- qt(0.975, df = 100 - 1)
+round(c(t_0.025, t_0.975), 2)</code></pre>
+<pre><code>#&gt; [1] -1.98  1.98</code></pre>
+<pre class="r"><code># 信賴區間
+lower &lt;- sample.mean - t_0.975 * S_n / sqrt(100)
+upper &lt;- sample.mean - t_0.025 * S_n / sqrt(100)
+round(c(lower, upper), 2)</code></pre>
+<pre><code>#&gt; [1] -0.29  0.34</code></pre>
+<pre class="r"><code># 畫圖
+## 法一
+ggplot() +
+  geom_point(aes(random.sample, dnorm(random.sample, 0, 2))) +
+  geom_vline(xintercept = c(lower, upper),
+             linetype = &quot;dashed&quot;,
+             color = &quot;red&quot;)</code></pre>
+<p><img src="/post/20191119/TA_class_1128_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+</div>
+</div>
+<div id="驗證" class="section level2">
+<h2>驗證</h2>
+<p>模擬重複抽樣 100 次，每次抽樣均抽出 100 組樣本，驗證雙尾檢定下 95% 的信賴區間。</p>
+<p>在觀察到樣本前，預期樣本的信賴區間有 95% 的可能涵蓋母體平均數，
+我們檢驗在重複抽樣 100 次後，有多少次抽樣的信賴區間包含母體平均數。</p>
+<pre class="r"><code># 模擬
+simulate &lt;- map(1:100, ~ tibble(r = rnorm(100, 0, 2)))
+lower_upper &lt;- map(1:100, ~ simulate[[.x]]) %&gt;%
+  map(~ tibble(lower = mean(.x$r) - qnorm(0.975, 0, 1) * 2 / sqrt(100),
+               upper = mean(.x$r) - qnorm(0.025, 0, 1) * 2 / sqrt(100))) %&gt;%
+  bind_rows()
+
+lower_upper</code></pre>
+<pre><code>#&gt; # A tibble: 100 x 2
+#&gt;      lower upper
+#&gt;      &lt;dbl&gt; &lt;dbl&gt;
+#&gt;  1 -0.366  0.418
+#&gt;  2 -0.558  0.226
+#&gt;  3 -0.655  0.129
+#&gt;  4 -0.144  0.640
+#&gt;  5 -0.518  0.266
+#&gt;  6 -0.0542 0.730
+#&gt;  7  0.0739 0.858
+#&gt;  8 -0.605  0.179
+#&gt;  9 -0.273  0.511
+#&gt; 10 -0.553  0.231
+#&gt; # ... with 90 more rows</code></pre>
+<pre class="r"><code>lower_upper %&gt;% 
+  mutate(row = row_number()) %&gt;%
+  ggplot() +
+  geom_segment(aes(x = lower, y = row,
+                   xend = upper, yend = row),
+               color = &quot;violetred4&quot;,
+               size = 1) +
+  labs(x = &quot;confidence interval&quot;,
+       y = &quot;simulation&quot;)</code></pre>
+<p><img src="/post/20191119/TA_class_1128_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<pre class="r"><code>confidence &lt;- lower_upper %&gt;% 
+  mutate(cover = 
+           case_when(lower &gt; 0 | upper &lt; 0 ~ 0, 
+                     TRUE ~ 1)) %&gt;%
+  summarise(cover = sum(cover))
+
+confidence</code></pre>
+<pre><code>#&gt; # A tibble: 1 x 1
+#&gt;   cover
+#&gt;   &lt;dbl&gt;
+#&gt; 1    96</code></pre>
+<p>本次模擬的結果有 96% 的信賴區間涵蓋母體平均數。</p>
+</div>
+<div id="作業" class="section level2">
+<h2>作業</h2>
+<p><code>ggplot::mpg</code> 的資料包含市區油耗與高速公路油耗，
+根據資料，假設油耗為常態分布，信賴水準為95%，請問所有汽車的市區油耗與高速公路油耗的母體平均數分別落在哪個範圍？</p>
+<p>市區油耗的母體平均數:</p>
+<pre><code>#&gt; [1] 16.31 17.41</code></pre>
+<p>高速公路油耗的母體平均數:</p>
+<pre><code>#&gt; [1] 22.67 24.21</code></pre>
+</div>
+<div id="補充" class="section level2 tabset tabset-pills tabset-fade">
+<h2>補充</h2>
+<ol start="2" style="list-style-type: decimal">
+<li>單一母體變異數的區間估計</li>
+</ol>
+<p>假設母體常態分配，以 <span class="math inline">\(95\%\)</span> 信賴區間，雙尾檢定為例。</p>
+<p>以樣本數為 100 的抽樣為例，分別求出抽樣的母體變異數在母體期望值已知與母體期望值未知的信賴區間。</p>
+<p>Hint: <span class="math inline">\(\chi^2_n\)</span> 系列的函數為 <code>*chisq()</code>。</p>
+<div id="母體期望值已知" class="section level3">
+<h3>母體期望值已知</h3>
+<p><span class="math display">\[
+\begin{aligned}
+&amp;X_1, X_2,\dots, X_n \sim N(\mu, \sigma^2)\\\\
+&amp;\frac{\sum(X_i - \mu)^2}{\sigma^2} \sim \chi^2_{n}\\\\
+&amp;0.95 = P(\chi^2_{n, 0.025} &lt; 
+\frac{\sum(X_i - \mu)^2}{\sigma^2}
+&lt; \chi^2_{n, 0.975})\\\\
+&amp;0.95 = P(\frac{\sum(X_i - \mu)^2}{\chi^2_{n, 0.975}} 
+&lt; \sigma^2
+&lt; \frac{\sum(X_i - \mu)^2}{\chi^2_{n, 0.025}})
+\end{aligned}
+\]</span></p>
+</div>
+<div id="母體期望值未知" class="section level3">
+<h3>母體期望值未知</h3>
+<p><span class="math display">\[
+\begin{aligned}
+&amp;X_1, X_2,\dots, X_n \sim N(\mu, \sigma^2)\\\\
+&amp;\frac{\sum(X_i - \bar X_n)^2}{\sigma^2} \sim \chi^2_{n-1}\\\\
+&amp;0.95 = P(\chi^2_{n-1, 0.025} &lt; 
+\frac{\sum(X_i - \bar X_n)^2}{\sigma^2}
+&lt; \chi^2_{n-1, 0.975})\\\\
+&amp;0.95 = P(\frac{\sum(X_i - \bar X_n)^2}{\chi^2_{n-1, 0.975}} 
+&lt; \sigma^2
+&lt; \frac{\sum(X_i - \bar X_n)^2}{\chi^2_{n-1, 0.025}})
+\end{aligned}
+\]</span></p>
+</div>
+</div>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  </body>
+</html>
+
