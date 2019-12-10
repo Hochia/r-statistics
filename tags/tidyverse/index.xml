@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 19 Nov 2019 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 03 Dec 2019 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="/tags/tidyverse/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>TA_class_1212</title>
+      <link>/2019/12/03/ta_class_1212/</link>
+      <pubDate>Tue, 03 Dec 2019 21:13:14 -0500</pubDate>
+      
+      <guid>/2019/12/03/ta_class_1212/</guid>
+      <description>預備 library(tidyverse) 程式-t檢定 # S3 method for default t.test(x, y = NULL, alternative = c(&amp;quot;two.sided&amp;quot;, &amp;quot;less&amp;quot;, &amp;quot;greater&amp;quot;), mu = 0, paired = FALSE, var.equal = FALSE, conf.level = 0.95, …) # S3 method for formula t.test(formula, data, subset, na.action, …) 單組樣本 先透過畫圖與敘述統計量了解資料的樣貌</description>
+    </item>
+    
+    <item>
+      <title>TA_class_1205</title>
+      <link>/2019/11/26/ta_class_1205/</link>
+      <pubDate>Tue, 26 Nov 2019 21:13:14 -0500</pubDate>
+      
+      <guid>/2019/11/26/ta_class_1205/</guid>
+      <description>單組樣本的假設檢定 雙尾 \[ \begin{aligned} \left\{ \begin{array}{ll} H_0: &amp;amp; \theta = \theta_0\\ H_1: &amp;amp; \theta \neq \theta_0 \end{array} \right. \end{aligned} \] \[ \begin{aligned} \left\{ \begin{array}{ll} H_0: &amp;amp; \theta = \theta_0\\ H_1: &amp;amp; \theta = \theta_1 \end{array} \right. \end{aligned} \] 單尾 左尾 \[ \begin{aligned} \left\{ \begin{array}{ll} H_0: &amp;amp; \theta = \theta_0\\ H_1: &amp;amp; \theta &amp;lt; \theta_0 \end{array} \right. \end{aligned} \] \[</description>
+    </item>
     
     <item>
       <title>TA_class_1128</title>

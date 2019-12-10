@@ -196,7 +196,7 @@ df2</code></pre>
 <div id="信賴區間" class="section level2 tabset tabset-pills tabset-fade">
 <h2>信賴區間</h2>
 <ol style="list-style-type: decimal">
-<li>單一母體期望值的區間估計</li>
+<li>單一母體平均數的區間估計</li>
 </ol>
 <p>假設母體常態分配，以 <span class="math inline">\(95\%\)</span> 信賴區間，雙尾檢定為例。</p>
 <div id="母體變異數已知" class="section level3">
@@ -369,10 +369,9 @@ confidence</code></pre>
 <li>單一母體變異數的區間估計</li>
 </ol>
 <p>假設母體常態分配，以 <span class="math inline">\(95\%\)</span> 信賴區間，雙尾檢定為例。</p>
-<p>以樣本數為 100 的抽樣為例，分別求出抽樣的母體變異數在母體期望值已知與母體期望值未知的信賴區間。</p>
 <p>Hint: <span class="math inline">\(\chi^2_n\)</span> 系列的函數為 <code>*chisq()</code>。</p>
-<div id="母體期望值已知" class="section level3">
-<h3>母體期望值已知</h3>
+<div id="母體平均數已知" class="section level3">
+<h3>母體平均數已知</h3>
 <p><span class="math display">\[
 \begin{aligned}
 &amp;X_1, X_2,\dots, X_n \sim N(\mu, \sigma^2)\\\\
@@ -386,8 +385,8 @@ confidence</code></pre>
 \end{aligned}
 \]</span></p>
 </div>
-<div id="母體期望值未知" class="section level3">
-<h3>母體期望值未知</h3>
+<div id="母體平均數未知" class="section level3">
+<h3>母體平均數未知</h3>
 <p><span class="math display">\[
 \begin{aligned}
 &amp;X_1, X_2,\dots, X_n \sim N(\mu, \sigma^2)\\\\
