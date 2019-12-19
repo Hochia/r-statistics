@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 03 Dec 2019 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 18 Dec 2019 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="/tags/tidyverse/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>TA_class_1226</title>
+      <link>/2019/12/18/ta_class_1226/</link>
+      <pubDate>Wed, 18 Dec 2019 21:13:14 -0500</pubDate>
+      
+      <guid>/2019/12/18/ta_class_1226/</guid>
+      <description>預備 library(tidyverse) 程式-卡方檢定 配適度檢定 以賽車手在不同賽道上的練習次數為例， Hamilton 在日本、新加坡、澳洲這三個國家的賽道上練習， 我們可能會想知道賽車手是否有</description>
+    </item>
+    
+    <item>
+      <title>TA_class_1219</title>
+      <link>/2019/12/16/ta_class_1219/</link>
+      <pubDate>Mon, 16 Dec 2019 21:13:14 -0500</pubDate>
+      
+      <guid>/2019/12/16/ta_class_1219/</guid>
+      <description>預備 library(tidyverse) 程式-ANOVA ANOVA 其中一種作法需要 lm() 和 anova() 兩個函數搭配操作。 另外一種作法是用 aov() 搭配 summary() 函數。 One-Way ANOVA 以 iris 資料為例: ggplot(iris) + geom_boxplot(aes(Species, Petal.Width, color = Species)) # 法一 iris.lm &amp;lt;- lm(Petal.Width~Species, data</description>
+    </item>
     
     <item>
       <title>TA_class_1212</title>
