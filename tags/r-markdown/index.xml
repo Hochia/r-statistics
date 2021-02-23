@@ -1,104 +1,104 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R Markdown on Hochia learning R</title>
-    <link>/tags/r-markdown/</link>
+    <link>https://hochia.github.io/r-statistics/tags/r-markdown/</link>
     <description>Recent content in R Markdown on Hochia learning R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019. All rights reserved.</copyright>
     <lastBuildDate>Wed, 18 Dec 2019 21:13:14 -0500</lastBuildDate>
     
-	<atom:link href="/tags/r-markdown/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hochia.github.io/r-statistics/tags/r-markdown/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>TA_class_1226</title>
-      <link>/2019/12/18/ta_class_1226/</link>
+      <link>https://hochia.github.io/r-statistics/2019/12/18/ta_class_1226/</link>
       <pubDate>Wed, 18 Dec 2019 21:13:14 -0500</pubDate>
       
-      <guid>/2019/12/18/ta_class_1226/</guid>
+      <guid>https://hochia.github.io/r-statistics/2019/12/18/ta_class_1226/</guid>
       <description>預備 library(tidyverse) 程式-卡方檢定 配適度檢定 以賽車手在不同賽道上的練習次數為例， Hamilton 在日本、新加坡、澳洲這三個國家的賽道上練習， 我們可能會想知道賽車手是否有</description>
     </item>
     
     <item>
       <title>TA_class_1219</title>
-      <link>/2019/12/16/ta_class_1219/</link>
+      <link>https://hochia.github.io/r-statistics/2019/12/16/ta_class_1219/</link>
       <pubDate>Mon, 16 Dec 2019 21:13:14 -0500</pubDate>
       
-      <guid>/2019/12/16/ta_class_1219/</guid>
+      <guid>https://hochia.github.io/r-statistics/2019/12/16/ta_class_1219/</guid>
       <description>預備 library(tidyverse) 程式-ANOVA ANOVA 其中一種作法需要 lm() 和 anova() 兩個函數搭配操作。 另外一種作法是用 aov() 搭配 summary() 函數。 One-Way ANOVA 以 iris 資料為例: ggplot(iris) + geom_boxplot(aes(Species, Petal.Width, color = Species)) # 法一 iris.lm &amp;lt;- lm(Petal.Width~Species, data</description>
     </item>
     
     <item>
       <title>TA_class_1212</title>
-      <link>/2019/12/03/ta_class_1212/</link>
+      <link>https://hochia.github.io/r-statistics/2019/12/03/ta_class_1212/</link>
       <pubDate>Tue, 03 Dec 2019 21:13:14 -0500</pubDate>
       
-      <guid>/2019/12/03/ta_class_1212/</guid>
+      <guid>https://hochia.github.io/r-statistics/2019/12/03/ta_class_1212/</guid>
       <description>預備 library(tidyverse) 程式-t檢定 # S3 method for default t.test(x, y = NULL, alternative = c(&amp;quot;two.sided&amp;quot;, &amp;quot;less&amp;quot;, &amp;quot;greater&amp;quot;), mu = 0, paired = FALSE, var.equal = FALSE, conf.level = 0.95, …) # S3 method for formula t.test(formula, data, subset, na.action, …) 單組樣本 先透過畫圖與敘述統計量了解資料的樣貌</description>
     </item>
     
     <item>
       <title>TA_class_1205</title>
-      <link>/2019/11/26/ta_class_1205/</link>
+      <link>https://hochia.github.io/r-statistics/2019/11/26/ta_class_1205/</link>
       <pubDate>Tue, 26 Nov 2019 21:13:14 -0500</pubDate>
       
-      <guid>/2019/11/26/ta_class_1205/</guid>
+      <guid>https://hochia.github.io/r-statistics/2019/11/26/ta_class_1205/</guid>
       <description>單組樣本的假設檢定 雙尾 \[ \begin{aligned} \left\{ \begin{array}{ll} H_0: &amp;amp; \theta = \theta_0\\ H_1: &amp;amp; \theta \neq \theta_0 \end{array} \right. \end{aligned} \] \[ \begin{aligned} \left\{ \begin{array}{ll} H_0: &amp;amp; \theta = \theta_0\\ H_1: &amp;amp; \theta = \theta_1 \end{array} \right. \end{aligned} \] 單尾 左尾 \[ \begin{aligned} \left\{ \begin{array}{ll} H_0: &amp;amp; \theta = \theta_0\\ H_1: &amp;amp; \theta &amp;lt; \theta_0 \end{array} \right. \end{aligned} \] \[</description>
     </item>
     
     <item>
       <title>TA_class_1128</title>
-      <link>/2019/11/19/ta_class_1128/</link>
+      <link>https://hochia.github.io/r-statistics/2019/11/19/ta_class_1128/</link>
       <pubDate>Tue, 19 Nov 2019 21:13:14 -0500</pubDate>
       
-      <guid>/2019/11/19/ta_class_1128/</guid>
+      <guid>https://hochia.github.io/r-statistics/2019/11/19/ta_class_1128/</guid>
       <description>預備 library(tidyverse) 資料匯入與匯出 不同格式的檔案需要用相對應的 package 來處理匯入與匯出，比如 tidyverse 裡的 readr 只適用於 .txt 和 .csv 檔案。 readxl 可以處理 .xls 和 .xlsx 檔案。 數據可能是以不同的</description>
     </item>
     
     <item>
       <title>TA_class_1121</title>
-      <link>/2019/11/14/ta_class_1121/</link>
+      <link>https://hochia.github.io/r-statistics/2019/11/14/ta_class_1121/</link>
       <pubDate>Thu, 14 Nov 2019 21:13:14 -0500</pubDate>
       
-      <guid>/2019/11/14/ta_class_1121/</guid>
+      <guid>https://hochia.github.io/r-statistics/2019/11/14/ta_class_1121/</guid>
       <description>預備 library(tidyverse) 複習 dplyr 資料轉換 filter() and select() group_by() and ungroup() summarize()and summarise() arrange() and desc() mutate() tidyr 齊整資料 gather() and spread() ggplot2 資料視覺化 ggplot() geom_point() geom_col() geom_boxplot() facet_wrap() coord_flip() theme_classic() tibble 資料框 通常 R 的使用者稱資料框都是指 data.fram</description>
     </item>
     
     <item>
       <title>TA_class_1114</title>
-      <link>/2019/11/08/ta_class_1114/</link>
+      <link>https://hochia.github.io/r-statistics/2019/11/08/ta_class_1114/</link>
       <pubDate>Fri, 08 Nov 2019 21:13:14 -0500</pubDate>
       
-      <guid>/2019/11/08/ta_class_1114/</guid>
+      <guid>https://hochia.github.io/r-statistics/2019/11/08/ta_class_1114/</guid>
       <description>預備 library(tidyverse) tidyr 齊整資料 &amp;amp; ggplot2 資料視覺化 回想上一次我們做過的: 不同製造商的小型車在市區油耗和高速公路油耗的平均值， mpg %&amp;gt;% select(manufacturer, cty, hwy, class) %&amp;gt;% filter(class == &amp;quot;compact&amp;quot;) %&amp;gt;% group_by(manufacturer) %&amp;gt;% summarise(cty_avg = mean(cty), hwy_avg =</description>
     </item>
     
     <item>
       <title>TA_class_1031</title>
-      <link>/2019/10/18/ta_class_1031/</link>
+      <link>https://hochia.github.io/r-statistics/2019/10/18/ta_class_1031/</link>
       <pubDate>Fri, 18 Oct 2019 21:13:14 -0500</pubDate>
       
-      <guid>/2019/10/18/ta_class_1031/</guid>
+      <guid>https://hochia.github.io/r-statistics/2019/10/18/ta_class_1031/</guid>
       <description>預備 library(tidyverse) dplyr 資料轉換 &amp;amp; ggplot2 資料視覺化 dplyr 資料轉換 回想上一次我們做過的: mpg %&amp;gt;% select(manufacturer, cty, hwy, class) %&amp;gt;% filter(class %in% c(&amp;quot;compact&amp;quot;, &amp;quot;suv&amp;quot;)) %&amp;gt;% group_by(manufacturer, class) %&amp;gt;% summarise(avg = mean(cty)) #&amp;gt; # A tibble: 15 x 3 #&amp;gt; # Groups: manufacturer [12] #&amp;gt; manufacturer class avg #&amp;gt; &amp;lt;chr&amp;gt; &amp;lt;chr&amp;gt; &amp;lt;dbl&amp;gt; #&amp;gt;</description>
     </item>
     
     <item>
       <title>TA_class_1024</title>
-      <link>/2019/10/17/ta_class_1024/</link>
+      <link>https://hochia.github.io/r-statistics/2019/10/17/ta_class_1024/</link>
       <pubDate>Thu, 17 Oct 2019 21:13:14 -0500</pubDate>
       
-      <guid>/2019/10/17/ta_class_1024/</guid>
+      <guid>https://hochia.github.io/r-statistics/2019/10/17/ta_class_1024/</guid>
       <description>預備 library(tidyverse) 包(Package) 為何要用其他的包，base R 不是也有嗎?比如畫圖，R base 有 plot()、boxplot() 等。為何要用 ggplot2()? 為了彌補之前</description>
     </item>
     
     <item>
       <title>TA_class_1017</title>
-      <link>/2019/10/15/ta_class_1017/</link>
+      <link>https://hochia.github.io/r-statistics/2019/10/15/ta_class_1017/</link>
       <pubDate>Tue, 15 Oct 2019 21:13:14 -0500</pubDate>
       
-      <guid>/2019/10/15/ta_class_1017/</guid>
+      <guid>https://hochia.github.io/r-statistics/2019/10/15/ta_class_1017/</guid>
       <description>New ProjectFile &amp;gt; New Project..
 New Project
 Set the directory name and the subdirectory.
@@ -111,10 +111,10 @@
     
     <item>
       <title>統計學與實習</title>
-      <link>/2019/10/10/%E7%B5%B1%E8%A8%88%E5%AD%B8%E8%88%87%E5%AF%A6%E7%BF%92/</link>
+      <link>https://hochia.github.io/r-statistics/2019/10/10/%E7%B5%B1%E8%A8%88%E5%AD%B8%E8%88%87%E5%AF%A6%E7%BF%92/</link>
       <pubDate>Thu, 10 Oct 2019 21:13:14 -0500</pubDate>
       
-      <guid>/2019/10/10/%E7%B5%B1%E8%A8%88%E5%AD%B8%E8%88%87%E5%AF%A6%E7%BF%92/</guid>
+      <guid>https://hochia.github.io/r-statistics/2019/10/10/%E7%B5%B1%E8%A8%88%E5%AD%B8%E8%88%87%E5%AF%A6%E7%BF%92/</guid>
       <description>TA class New Project File &amp;gt; New Project.. New Project Set the directory name and the subdirectory. R Markdown You can write the report with RMarkdown. It can generate HTML, PDF, Word, and PPT documents. Furthermore, math equations can be write with LaTex format. Find the cheet sheet from Help &amp;gt; Cheetsheets &amp;gt; R Markdown Cheet Sheet Create your R Markdown! R Markdown Add the title and author name. Setup</description>
     </item>
     

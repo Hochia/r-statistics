@@ -1,109 +1,109 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/categories/</loc>
+    <loc>https://hochia.github.io/r-statistics/categories/</loc>
     <lastmod>2019-12-18T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>https://hochia.github.io/r-statistics/post/</loc>
     <lastmod>2019-12-18T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/</loc>
+    <loc>https://hochia.github.io/r-statistics/categories/r/</loc>
     <lastmod>2019-12-18T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/r/</loc>
+    <loc>https://hochia.github.io/r-statistics/tags/r-markdown/</loc>
     <lastmod>2019-12-18T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/r-markdown/</loc>
+    <loc>https://hochia.github.io/r-statistics/2019/12/18/ta_class_1226/</loc>
     <lastmod>2019-12-18T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/2019/12/18/ta_class_1226/</loc>
+    <loc>https://hochia.github.io/r-statistics/tags/</loc>
     <lastmod>2019-12-18T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>https://hochia.github.io/r-statistics/tags/tidyverse/</loc>
     <lastmod>2019-12-18T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/tidyverse/</loc>
-    <lastmod>2019-12-18T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2019/12/16/ta_class_1219/</loc>
+    <loc>https://hochia.github.io/r-statistics/2019/12/16/ta_class_1219/</loc>
     <lastmod>2019-12-16T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/2019/12/03/ta_class_1212/</loc>
+    <loc>https://hochia.github.io/r-statistics/2019/12/03/ta_class_1212/</loc>
     <lastmod>2019-12-03T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/2019/11/26/ta_class_1205/</loc>
+    <loc>https://hochia.github.io/r-statistics/2019/11/26/ta_class_1205/</loc>
     <lastmod>2019-11-26T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/2019/11/19/ta_class_1128/</loc>
+    <loc>https://hochia.github.io/r-statistics/2019/11/19/ta_class_1128/</loc>
     <lastmod>2019-11-19T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/2019/11/14/ta_class_1121/</loc>
+    <loc>https://hochia.github.io/r-statistics/2019/11/14/ta_class_1121/</loc>
     <lastmod>2019-11-14T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/2019/11/08/ta_class_1114/</loc>
+    <loc>https://hochia.github.io/r-statistics/2019/11/08/ta_class_1114/</loc>
     <lastmod>2019-11-08T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/2019/10/18/ta_class_1031/</loc>
+    <loc>https://hochia.github.io/r-statistics/2019/10/18/ta_class_1031/</loc>
     <lastmod>2019-10-18T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/2019/10/17/ta_class_1024/</loc>
+    <loc>https://hochia.github.io/r-statistics/2019/10/17/ta_class_1024/</loc>
     <lastmod>2019-10-17T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/2019/10/15/ta_class_1017/</loc>
+    <loc>https://hochia.github.io/r-statistics/2019/10/15/ta_class_1017/</loc>
     <lastmod>2019-10-15T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/plot/</loc>
+    <loc>https://hochia.github.io/r-statistics/tags/plot/</loc>
     <lastmod>2019-10-10T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/regression/</loc>
+    <loc>https://hochia.github.io/r-statistics/tags/regression/</loc>
     <lastmod>2019-10-10T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/2019/10/10/%E7%B5%B1%E8%A8%88%E5%AD%B8%E8%88%87%E5%AF%A6%E7%BF%92/</loc>
+    <loc>https://hochia.github.io/r-statistics/2019/10/10/%E7%B5%B1%E8%A8%88%E5%AD%B8%E8%88%87%E5%AF%A6%E7%BF%92/</loc>
     <lastmod>2019-10-10T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/about/</loc>
+    <loc>https://hochia.github.io/r-statistics/about/</loc>
+    <lastmod>2016-05-05T21:48:51-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hochia.github.io/r-statistics/</loc>
     <lastmod>2016-05-05T21:48:51-07:00</lastmod>
   </url>
   
